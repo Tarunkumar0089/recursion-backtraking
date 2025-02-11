@@ -5,14 +5,12 @@ public class queens {
       boolean[][] board = new boolean[n][n];
       solveNQueens(board, n, 0);
     }
-  
     public static void solveNQueens(boolean[][] board, int tq, int row) {
       if (tq == 0) {
         display(board);
         System.out.println();
         return;
       }
-  
       for (int col = 0; col < board[0].length; col++) {
         if (isSafe(board, row, col)) {
           board[row][col] = true;
@@ -21,7 +19,6 @@ public class queens {
         }
       }
     }
-  
     public static void display(boolean[][] board) {
       for (int i = 0; i < board.length; i++) {
         for (int j = 0; j < board[0].length; j++) {
