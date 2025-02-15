@@ -1,6 +1,5 @@
 package RECURSION;
-
-public class pow {
+public class Pow_log_n {
     public static void main(String[] args) {
         int a=3;
         int n=5;
